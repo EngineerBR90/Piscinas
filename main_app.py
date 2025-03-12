@@ -13,7 +13,7 @@ def main():
         st.image("assets/logo_fx2.png", width=100)
         st.title("Navegação")
         page = st.radio("Selecione o módulo:", 
-                       ["Menu Principal", "Filtragem", "Transbordo", "Hidromassagem"])
+                       ["Menu Principal", "Filtragem", "Transbordo", "Hidromassagem", "Cascatas", "Aquecimento"])
     
     # Page Routing
     if "current_page" not in st.session_state:
@@ -32,6 +32,11 @@ def main():
         transbordo.run()
     elif st.session_state.current_page == "Hidromassagem":
         st.warning("Módulo em desenvolvimento! 🚧")
+    elif st.session_state.current_page == "Cascatas":
+        st.warning("Módulo em desenvolvimento! 🚧")
+    elif st.session_state.current_page == "Aquecimento":
+        st.warning("Módulo em desenvolvimento! 🚧")
+ 
 
 def show_home():
     st.title("SisHydro Piscinas")
@@ -42,6 +47,13 @@ def show_home():
     - Sistema de filtragem com seleção automática de conjunto Filtro+MB
     - Cálculo de vazão necessária para sistemas de transbordo (borda infinita)
     - Banco de dados técnicos sobre equipamentos (Sodramar database)
+
+     **Módulos em desenvolvimento:**
+     - Hidromassagem
+     - Cascatas 
+     - Aquecimento por trocador de calor elétrico (engenharia reversa da PLANILHA DE DIMENSIONAMENTO SODRAMAR)
+     - Verificação de velocidade de fluxo em linhas de sucção conforme NBR 10.339:2018 (módulo pronto, falta adaptar UI)
+     - Verificação de suscetibilidade à cavitação
     """)
     
     #st.image("assets/logo_fx2.png", use_container_width=True)
