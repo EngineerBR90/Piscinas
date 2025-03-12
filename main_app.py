@@ -42,7 +42,7 @@ def show_home():
     - Banco de dados técnicos integrado
     """)
     
-    st.image("https://example.com/piscina-tech.jpg", use_column_width=True)
+    st.image("https://example.com/piscina-tech.jpg", use_container_width=True)
 
 if __name__ == "__main__":
     main()
