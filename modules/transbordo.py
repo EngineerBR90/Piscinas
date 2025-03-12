@@ -136,7 +136,7 @@ BANCO_BOMBAS = [
 ]
 
 def run():
-    st.title("🌊 Módulo de Transbordo")
+    st.title("Módulo de Transbordo")
     st.markdown("---")
     
     # Container principal
