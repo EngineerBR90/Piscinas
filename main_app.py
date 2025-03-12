@@ -10,7 +10,7 @@ def main():
     
     # Sidebar Navigation
     with st.sidebar:
-        st.image("https://cdn-icons-png.flaticon.com/512/143/143655.png", width=120)
+        st.image("https://www.grupogarcia.com.br/build/assets/logo-CMZ5s76O.webp", width=120)
         st.title("Navegação")
         page = st.radio("Selecione o módulo:", 
                        ["🏠 Menu Principal", "🔧 Filtragem", "🌊 Transbordo"])
