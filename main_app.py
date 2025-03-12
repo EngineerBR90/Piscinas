@@ -10,7 +10,7 @@ def main():
     
     # Sidebar Navigation
     with st.sidebar:
-        st.image("assets/logo_fx2.jpg", width=100)
+        st.image("assets/logo_fx2.png", width=100)
         st.title("Navegação")
         page = st.radio("Selecione o módulo:", 
                        ["🏠 Menu Principal", "🔧 Filtragem", "🌊 Transbordo"])
