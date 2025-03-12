@@ -34,12 +34,12 @@ def main():
 def show_home():
     st.title("SisHydro Piscinas")
     st.markdown("""
-    ### Sistema de dimensionamento para sistemas hidráulicos
+    ### Ferramentas para dimensionamento sistemas hidráulicos para piscinas
     
     **Recursos Disponíveis:**
-    - Sistema de filtragem com seleção automática de componentes
-    - Cálculo preciso para bordas infinitas
-    - Banco de dados técnicos integrado
+    - Sistema de filtragem com seleção automática de conjunto Filtro+MB
+    - Cálculo de vazão necessária para sistemas de transbordo (borda infinita)
+    - Banco de dados técnicos sobre equipamentos (Sodramar database)
     """)
     
     #st.image("assets/logo_fx2.png", use_container_width=True)
