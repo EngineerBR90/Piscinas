@@ -1,2 +1,13 @@
-# Piscinas
-Dimensionamento de sistemas hidráulicos para piscinas de acordo com norma ABNT NBR 10.339:2018
+# SisHydro Piscinas
+Dimensionamento de sistemas hidráulicos para piscinas de acordo com norma brasileira ABNT NBR 10.339:2018
+
+## Funcionalidades
+- Módulo de Filtragem Automática
+- Cálculo de Transbordo
+
+
+## Instalação
+```bash
+git clone https://github.com/EngineerBR90/Piscinas/
+cd piscina-hidraulica
+pip install -r requirements.txt
