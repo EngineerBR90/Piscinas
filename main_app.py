@@ -42,7 +42,7 @@ def show_home():
     - Banco de dados técnicos integrado
     """)
     
-    st.image("assets/logo_fx2.png", use_container_width=True)
+    #st.image("assets/logo_fx2.png", use_container_width=True)
 
 if __name__ == "__main__":
     main()
