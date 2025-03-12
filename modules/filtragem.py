@@ -136,16 +136,16 @@ def run():
             
             with col1:
                 st.metric("Filtro Selecionado", filtro_selecionado["modelo"])
-                st.metric("Vazão Necessária", f"{filtro_selecionado['volume_6h']} m³/h")
+                st.metric("Vazão do conjunto MB+Filtro", f"{filtro_selecionado['volume_6h']} m³/h")
                 st.metric("Motobomba Recomendada", filtro_selecionado["modelo_motobomba"])
             
             with col2:
                 with st.expander("🔍 Detalhes Técnicos do Filtro"):
-                    st.write(f"**Capacidade:**")
+                    st.write(f"**Capacidade de filtragem:**")
                     st.write(f"- 6 horas: {filtro_selecionado['volume_6h']} m³")
                     st.write(f"- 8 horas: {filtro_selecionado['volume_8h']} m³")
                     
-                    st.write(f"**Dimensões:**")
+                    st.write(f"**Dimensões do filtro:**")
                     st.write(f"- Diâmetro: {filtro_selecionado['diametro_mm']} mm")
                     st.write(f"- Altura: {filtro_selecionado['altura_mm']} mm")
                     
@@ -153,7 +153,7 @@ def run():
                     st.write(f"- Total: {filtro_selecionado['carga_areia_kg']} kg")
                     st.write(f"- Sacos de 25kg: {filtro_selecionado['quant_sacos_25kg']}")
                     
-                    st.write(f"**Peso:**")
+                    st.write(f"**Peso bruto:**")
                     st.write(f"- Com areia: {filtro_selecionado['peso_bruto_com_areia_kg']} kg")
                     st.write(f"- Sem areia: {filtro_selecionado['peso_bruto_sem_areia_kg']} kg")
             
