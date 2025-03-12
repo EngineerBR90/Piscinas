@@ -198,9 +198,9 @@ def run():
             res_col1, res_col2 = st.columns([1, 2])
             
             with res_col1:
-                st.metric("Vazão Necessária", f"{vazao_necessaria:.2f} m³/h")
-                st.metric("Volume do Coche", f"{volume_cocho_litros:.2f} L")
-                st.metric("Área da Lâmina", f"{area_lamina_m2:.4f} m²")
+                st.metric("Vazão necessária para o efeito", f"{vazao_necessaria:.2f} m³/h")
+                st.metric("Volume do cocho", f"{volume_cocho_litros:.2f} L")
+                st.metric("Área da lâmina", f"{area_lamina_m2:.4f} m²")
                 
                 if selected_pump:
                     st.success(f"**Motobomba Selecionada:** {selected_pump['modelo']}")
@@ -216,7 +216,7 @@ def run():
                         st.write(f"- Potência: {selected_pump['potencia_cv']} CV")
                         st.write(f"- Vazão em {pressao_mca} m.c.a: {selected_pump[f'vazao_{pressao_mca}_mca']} m³/h")
                         
-                        st.write("**Outras Vazões:**")
+                        st.write("**Curva da MB:**")
                         for press in possible_pressures:
                             key = f"vazao_{press}_mca"
                             if selected_pump.get(key):
@@ -224,9 +224,9 @@ def run():
                 else:
                     st.warning("""
                     **Recomendações:**
-                    - Verificar se a pressão selecionada é adequada
-                    - Considerar associação de múltiplas bombas
-                    - Consultar modelos com maior capacidade
+                    - Verificar se a pressão selecionada condiz com a perda de carga da linha
+                    - Considerar associação de múltiplas bombas para atingir a vazão necessária
+                    - Consultar outros modelos de motobombas (linha BMS por exemplo)
                     """)
             
             st.markdown("---")
