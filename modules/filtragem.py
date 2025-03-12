@@ -2,7 +2,102 @@
 import streamlit as st
 
 BANCO_FILTROS = [
-    # ... (mantenha a mesma lista de dicionários que você forneceu)
+    {
+        "modelo": "FM-25",
+        "volume_6h": 14,
+        "volume_8h": 19,
+        "carga_areia_kg": 18,
+        "quant_sacos_25kg": 1,
+        "diametro_mm": 325,
+        "altura_mm": 735,
+        "peso_bruto_com_areia_kg": 23.4,
+        "peso_bruto_sem_areia_kg": 5.4,
+        "modelo_motobomba": "BMC-25 M"
+    },
+    {
+        "modelo": "FM-30",
+        "volume_6h": 21,
+        "volume_8h": 28,
+        "carga_areia_kg": 25,
+        "quant_sacos_25kg": 1,
+        "diametro_mm": 335,
+        "altura_mm": 583,
+        "peso_bruto_com_areia_kg": 34.13,
+        "peso_bruto_sem_areia_kg": 9.13,
+        "modelo_motobomba": "BMC-25 M"
+    },
+    {
+        "modelo": "FM-36",
+        "volume_6h": 30,
+        "volume_8h": 40,
+        "carga_areia_kg": 40,
+        "quant_sacos_25kg": 2,
+        "diametro_mm": 380,
+        "altura_mm": 772,
+        "peso_bruto_com_areia_kg": 50.7,
+        "peso_bruto_sem_areia_kg": 10.7,
+        "modelo_motobomba": "BMC-33 M"
+    },
+    {
+        "modelo": "FM-40",
+        "volume_6h": 59,
+        "volume_8h": 78,
+        "carga_areia_kg": 125,
+        "quant_sacos_25kg": 5,
+        "diametro_mm": 430,
+        "altura_mm": 835,
+        "peso_bruto_com_areia_kg": 142.98,
+        "peso_bruto_sem_areia_kg": 17.98,
+        "modelo_motobomba": "BMC-50 M"
+    },
+    {
+        "modelo": "FM-50",
+        "volume_6h": 37,
+        "volume_8h": 50,
+        "carga_areia_kg": 65,
+        "quant_sacos_25kg": 3,
+        "diametro_mm": 525,
+        "altura_mm": 950,
+        "peso_bruto_com_areia_kg": 77.55,
+        "peso_bruto_sem_areia_kg": 12.55,
+        "modelo_motobomba": "BMC-75 M"
+    },
+    {
+        "modelo": "FM-60",
+        "volume_6h": 85,
+        "volume_8h": 113,
+        "carga_areia_kg": 200,
+        "quant_sacos_25kg": 8,
+        "diametro_mm": 645,
+        "altura_mm": 1000,
+        "peso_bruto_com_areia_kg": 221.42,
+        "peso_bruto_sem_areia_kg": 21.42,
+        "modelo_motobomba": "BMC-100 M"
+    },
+    {
+        "modelo": "FM-75",
+        "volume_6h": 132,
+        "volume_8h": 176,
+        "carga_areia_kg": 300,
+        "quant_sacos_25kg": 12,
+        "diametro_mm": 770,
+        "altura_mm": 1140,
+        "peso_bruto_com_areia_kg": 335.74,
+        "peso_bruto_sem_areia_kg": 35.74,
+        "modelo_motobomba": "BM-150 T"
+    },
+    {
+        "modelo": "FM-100",
+        "volume_6h": 234,
+        "volume_8h": 312,
+        "carga_areia_kg": 525,
+        "quant_sacos_25kg": 21,
+        "diametro_mm": 1120,
+        "altura_mm": 1215,
+        "peso_bruto_com_areia_kg": 579.8,
+        "peso_bruto_sem_areia_kg": 54.8,
+        "modelo_motobomba": "BM-300 T"
+    }
 ]
 
 def run():
