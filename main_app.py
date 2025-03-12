@@ -24,11 +24,11 @@ def main():
         st.rerun()
     
     # Page Content
-    if st.session_state.current_page == "Menu Principal":
+    if st.session_state.current_page == "🏠 Menu Principal":
         show_home()
-    elif st.session_state.current_page == "Filtragem":
+    elif st.session_state.current_page == "🔧 Filtragem":
         filtragem.run()
-    elif st.session_state.current_page == "Transbordo":
+    elif st.session_state.current_page == "🌊 Transbordo":
         transbordo.run()
 
 def show_home():
