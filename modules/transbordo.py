@@ -199,7 +199,7 @@ def run():
             
             with res_col1:
                 st.metric("Vazão necessária para o efeito", f"{vazao_necessaria:.2f} m³/h")
-                st.metric("Volume do cocho", f"{volume_cocho_litros:.2f} L")
+                st.metric("Volume útil mínimo para o cocho", f"{volume_cocho_litros:.2f} L")
                 st.metric("Área da lâmina", f"{area_lamina_m2:.4f} m²")
                 
                 if selected_pump:
