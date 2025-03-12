@@ -13,7 +13,7 @@ def main():
         st.image("assets/logo_fx2.png", width=100)
         st.title("Navegação")
         page = st.radio("Selecione o módulo:", 
-                       ["Menu Principal", "Filtragem", "Transbordo"])
+                       ["Menu Principal", "Filtragem", "Transbordo", "Hidromassagem"])
     
     # Page Routing
     if "current_page" not in st.session_state:
@@ -30,6 +30,8 @@ def main():
         filtragem.run()
     elif st.session_state.current_page == "Transbordo":
         transbordo.run()
+    elif st.session_state.current_page == "Hidromassagem":
+        st.warning("Módulo em desenvolvimento! 🚧")
 
 def show_home():
     st.title("SisHydro Piscinas")
