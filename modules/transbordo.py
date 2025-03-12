@@ -3,7 +3,136 @@ import math
 import streamlit as st
 
 BANCO_BOMBAS = [
-    # ... (mantenha a mesma lista de dicionários que você forneceu)
+    {
+        "modelo": "BMC-25",
+        "potencia_cv": 0.25,
+        "vazao_2_mca": 12.14,
+        "vazao_4_mca": 11.47,
+        "vazao_6_mca": 9.02,
+        "vazao_8_mca": 7.28,
+        "vazao_10_mca": None,
+        "vazao_12_mca": None,
+        "vazao_14_mca": None,
+        "vazao_16_mca": None,
+        "vazao_18_mca": None
+    },
+    {
+        "modelo": "BMC-33",
+        "potencia_cv": 0.33,
+        "vazao_2_mca": None,
+        "vazao_4_mca": 11.91,
+        "vazao_6_mca": 9.44,
+        "vazao_8_mca": 7.43,
+        "vazao_10_mca": None,
+        "vazao_12_mca": None,
+        "vazao_14_mca": None,
+        "vazao_16_mca": None,
+        "vazao_18_mca": None
+    },
+    {
+        "modelo": "BMC-50",
+        "potencia_cv": 0.5,
+        "vazao_2_mca": None,
+        "vazao_4_mca": 12.77,
+        "vazao_6_mca": 10.12,
+        "vazao_8_mca": 8.03,
+        "vazao_10_mca": 5.23,
+        "vazao_12_mca": None,
+        "vazao_14_mca": None,
+        "vazao_16_mca": None,
+        "vazao_18_mca": None
+    },
+    {
+        "modelo": "BMC-75",
+        "potencia_cv": 0.75,
+        "vazao_2_mca": None,
+        "vazao_4_mca": 16.26,
+        "vazao_6_mca": 13.75,
+        "vazao_8_mca": 12.24,
+        "vazao_10_mca": 10.28,
+        "vazao_12_mca": None,
+        "vazao_14_mca": None,
+        "vazao_16_mca": None,
+        "vazao_18_mca": None
+    },
+    {
+        "modelo": "BMC-100",
+        "potencia_cv": 1.0,
+        "vazao_2_mca": None,
+        "vazao_4_mca": 19.38,
+        "vazao_6_mca": 19.88,
+        "vazao_8_mca": 16.71,
+        "vazao_10_mca": 14.83,
+        "vazao_12_mca": 13.25,
+        "vazao_14_mca": 5.75,
+        "vazao_16_mca": None,
+        "vazao_18_mca": None
+    },
+    {
+        "modelo": "BMC-150",
+        "potencia_cv": 1.5,
+        "vazao_2_mca": None,
+        "vazao_4_mca": None,
+        "vazao_6_mca": 26.79,
+        "vazao_8_mca": 23.14,
+        "vazao_10_mca": 22.77,
+        "vazao_12_mca": 21.95,
+        "vazao_14_mca": 18.63,
+        "vazao_16_mca": 12.38,
+        "vazao_18_mca": 4.46
+    },
+    {
+        "modelo": "BMC-200",
+        "potencia_cv": 2.0,
+        "vazao_2_mca": None,
+        "vazao_4_mca": None,
+        "vazao_6_mca": 28.24,
+        "vazao_8_mca": 27.11,
+        "vazao_10_mca": 24.35,
+        "vazao_12_mca": 20.94,
+        "vazao_14_mca": 19.19,
+        "vazao_16_mca": 15.92,
+        "vazao_18_mca": 3.6
+    },
+       {
+        "modelo": "BMU-200",
+        "potencia_cv": 2.0,
+        "vazao_2_mca": None,
+        "vazao_4_mca": None,
+        "vazao_6_mca": 40.0,
+        "vazao_8_mca": 38.27,
+        "vazao_10_mca": 36.55,
+        "vazao_12_mca": 34.82,
+        "vazao_14_mca": 31.36,
+        "vazao_16_mca": 27.64,
+        "vazao_18_mca": None
+    },
+    {
+        "modelo": "BMU-300",
+        "potencia_cv": 3.0,
+        "vazao_2_mca": None,
+        "vazao_4_mca": None,
+        "vazao_6_mca": 44.4,
+        "vazao_8_mca": 42.26,
+        "vazao_10_mca": 40.16,
+        "vazao_12_mca": 38.2,
+        "vazao_14_mca": 36.6,
+        "vazao_16_mca": 34.31,
+        "vazao_18_mca": None
+    },
+    {
+        "modelo": "BMU-400",
+        "potencia_cv": 4.0,
+        "vazao_2_mca": None,
+        "vazao_4_mca": None,
+        "vazao_6_mca": 54.0,
+        "vazao_8_mca": 50.4,
+        "vazao_10_mca": 46.8,
+        "vazao_12_mca": 43.2,
+        "vazao_14_mca": 38.4,
+        "vazao_16_mca": 35.6,
+        "vazao_18_mca": None
+    }
 ]
 
 def run():
