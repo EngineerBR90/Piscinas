@@ -122,7 +122,9 @@ def run():
             if filtro["volume_6h"] >= volume:
                 filtro_selecionado = filtro
 
-volume_1h = volume_6h / 6
+#volume_1h = volume_6h / 6
+print(type(volume_6h))
+st.write(type(volume_6h))
 
                 break
         
@@ -140,7 +142,7 @@ volume_1h = volume_6h / 6
             
             with col1:
                 st.metric("Filtro Selecionado", filtro_selecionado["modelo"])
-                st.metric("Vazão do conjunto MB+Filtro", f"{filtro_selecionado["volume_1h"]} m³/h")
+                st.metric("Vazão do conjunto MB+Filtro", f"{filtro_selecionado["volume_6h"]} m³/h")
                 st.metric("Motobomba Recomendada", filtro_selecionado["modelo_motobomba"])
             
             with col2:
