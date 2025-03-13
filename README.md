@@ -2,8 +2,8 @@
 Dimensionamento de sistemas hidráulicos para piscinas de acordo com norma brasileira ABNT NBR 10.339:2018
 
 ## Funcionalidades
-- Módulo de Filtragem Automática
-- Cálculo de Transbordo
+- Módulo Filtragem
+- Módulo Transbordo
 
 
 ## Instalação
