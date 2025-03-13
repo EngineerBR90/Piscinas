@@ -122,10 +122,6 @@ def run():
             if filtro["volume_6h"] >= volume:
                 filtro_selecionado = filtro
 
-#volume_1h = volume_6h / 6
-#print(type(volume_6h))
-#st.write(type(volume_6h))
-
                 break
         
         if not filtro_selecionado:
