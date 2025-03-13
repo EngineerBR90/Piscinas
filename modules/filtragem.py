@@ -1,4 +1,4 @@
-# filtragem.py
+8# filtragem.py
 import streamlit as st
 
 BANCO_FILTROS = [
@@ -122,7 +122,7 @@ def run():
             if filtro["volume_6h"] >= volume:
                 filtro_selecionado = filtro
 
-volume_1h = "volume_6h"
+volume_1h = "volume_6h" / 6
 
                 break
         
