@@ -127,7 +127,7 @@ def run():
             st.error("Nenhum filtro disponível suporta este volume!")
             return
 
-volume_1h = ("volume_6h" / 6)
+#volume_1h = ("volume_6h" / 6)
 
         # Exibição dos resultados
         with result_container:
@@ -138,7 +138,7 @@ volume_1h = ("volume_6h" / 6)
             
             with col1:
                 st.metric("Filtro Selecionado", filtro_selecionado["modelo"])
-                st.metric("Vazão do conjunto MB+Filtro", f"{filtro_selecionado["volume_1h"]} m³/h")
+                st.metric("Vazão do conjunto MB+Filtro", f"{filtro_selecionado["volume_6h"]} m³/h")
                 st.metric("Motobomba Recomendada", filtro_selecionado["modelo_motobomba"])
             
             with col2:
