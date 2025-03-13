@@ -122,7 +122,7 @@ def run():
             if filtro["volume_6h"] >= volume:
                 filtro_selecionado = filtro
 
-volume_1h = float(volume_6h) / 6
+volume_1h = volume_6h / 6
 
                 break
         
