@@ -1,4 +1,4 @@
-8# filtragem.py
+# filtragem.py
 import streamlit as st
 
 BANCO_FILTROS = [
@@ -142,7 +142,7 @@ def run():
             
             with col1:
                 st.metric("Filtro Selecionado", filtro_selecionado["modelo"])
-                st.metric("Vazão do conjunto MB+Filtro", f"{filtro_selecionado["volume_6h"]} m³/h")
+                st.metric("Vazão do conjunto MB+Filtro", f"{filtro_selecionado['volume_6h']} m³/h")
                 st.metric("Motobomba Recomendada", filtro_selecionado["modelo_motobomba"])
             
             with col2:
